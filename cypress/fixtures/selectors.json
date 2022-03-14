@@ -1,0 +1,20 @@
+{
+  "nameHall": "form > .conf-step__label > .conf-step__input",
+  "buttonAddHall": "form > .conf-step__buttons > .conf-step__button-accent",
+  "delHall": "form > .conf-step__buttons > .conf-step__button-accent",
+  "login": ".login__button",
+  "chooseHall": "#hall-configuration > .conf-step__wrapper > .conf-step__selectors-box > :nth-child(4) > .conf-step__radio",
+  "rows": "#input_rows_count",
+  "places": "#input_places_count",
+  "settingsSave": "#price-configuration > .conf-step__wrapper > .conf-step__buttons > .conf-step__button-accent",
+  "closeButton": "#start-sales > .text-center > .conf-step__button",
+  "saveButton": "#hall-configuration > .conf-step__wrapper > .conf-step__buttons > .conf-step__button-accent",
+  "closeHall": "#start-sales > [style='display: block;'] > .conf-step__selectors-box > :nth-child(4) > .conf-step__radio",
+  "mail": "[for='email'] > .login__input",
+  "pass": "[for='pwd'] > .login__input",
+  "hall": "[data-hall-name='Hall4']",
+  "hallPrice": "#price-configuration > .conf-step__wrapper > .conf-step__selectors-box > :nth-child(3) > .conf-step__radio",
+  "standart": "#input_price_standart",
+  "vip": "#input_price_vip",
+  "savePrice": "#price-configuration > .conf-step__wrapper > .conf-step__buttons > .conf-step__button-accent"
+}

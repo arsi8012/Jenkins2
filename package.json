@@ -1,0 +1,26 @@
+{
+  "name": "cypress2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:spec1": "cypress run --spec 'cypress/integration/booking/bookTickets.spec.js' --record --key bb44b6ed-456e-406b-a9f9-14ab65441d63",
+    "cy:spec2": "cypress run --spec 'cypress/integration/films/newHall.spec.js' --record --key bb44b6ed-456e-406b-a9f9-14ab65441d63",
+    "cy:spec3": "cypress run --spec 'cypress/integration/films/newPrice.spec.js' --record --key bb44b6ed-456e-406b-a9f9-14ab65441d63",
+    "cy:chromeParallel": "npm run cy:spec1 -- --browser chrome --group Spec1 --ci-build-id 38 & npm run cy:spec2 -- --browser chrome --group Spec2 --ci-build-id 38",
+    "cy:electronParallel": "npm run cy:spec1 -- --group Spec1 --ci-build-id 39 & npm run cy:spec2 -- --group Spec2 --ci-build-id 39",
+    "cy:firefoxParallel": "npm run cy:spec1 -- --browser firefox --group Spec1 --ci-build-id 41 & npm run cy:spec2 -- --browser firefox --group Spec2 --ci-build-id 41",
+    "cy:streamsParallel": "cypress run --spec 'cypress/integration/booking/**/*' --record --key bb44b6ed-456e-406b-a9f9-14ab65441d63 --browser chrome --group Spec1 --ci-build-id 44 & cypress run --spec 'cypress/integration/films/**/*' --record --key bb44b6ed-456e-406b-a9f9-14ab65441d63 --browser firefox --group Spec2 --ci-build-id 44"
+  },
+  "author": "AOA",
+  "license": "ISC",
+  "dependencies": {
+    "@4tw/cypress-drag-drop": "^2.1.0",
+    "chai": "^4.3.6",
+    "cypress": "^9.5.1",
+    "cypress-drag-drop": "^1.1.1"
+  },
+  "devDependencies": {
+    "cypress-file-upload": "^5.0.8"
+  }
+}
